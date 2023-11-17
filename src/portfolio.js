@@ -26,7 +26,7 @@ const greeting = {
     "An enthusiastic Data Scientist with a strong foundation in Artificial Intelligence 🚀 having an experience in data analytics, AI model development, and natural language processing. deeply committed to leveraging AI and machine learning to derive insights and foster data-driven decision-making across diverse domains."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1AlTpxhfQXPMj6Mz9WSZ_iWBVrAd2ThPF/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
