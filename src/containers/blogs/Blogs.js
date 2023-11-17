@@ -37,7 +37,7 @@ export default function Blogs() {
               `${error} (because of this error Blogs section could not be displayed. Blogs section has reverted to default)`
             );
             setMediumBlogsFunction("Error");
-            blogSection.displayMediumBlogs = "false";
+            blogSection.displayMediumBlogs = "true";
           });
       };
       getProfileData();
