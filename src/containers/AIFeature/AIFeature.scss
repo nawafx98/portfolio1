@@ -1,0 +1,164 @@
+@import "../../_globalColor";
+
+.ai-feature-section {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0px auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.ai-feature-heading {
+  font-size: 70px;
+  line-height: 1.1;
+  color: $titleColor !important;
+  margin-bottom: 20px;
+}
+
+.file-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: visible;
+    z-index: -1;
+  }
+
+  .file-name {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 16px;
+    color: $textColor;
+  }
+
+ // This will be the label that looks like a button
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: $buttonColor; // Use your button color variable
+    color: white; // Use your text color variable
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $buttonHover; // Use your button hover color variable
+    }
+  }
+  
+ // Custom file input styles
+.file-upload-container {
+    position: relative;
+    margin: 20px 0;
+  }
+ 
+  
+.ai-feature-content {
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px 10px;
+}
+
+.ai-feature-results {
+  margin-top: 20px;
+  padding: 1rem;
+  border: 1px solid $lightBorder1; // Use an existing global border color variable
+  border-radius: 8px;
+  background-color: $lightBackground1; // Use an existing global background color variable
+  color: $textColor; // Use an existing global text color variable
+}
+
+.button-greeting-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid $lightBorder1;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: $buttonColor; // Use the global button color variable
+  color: white ;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $buttonHover; // Use the global button hover color variable
+  }
+
+  &:disabled {
+    background-color: lighten($buttonColor, 10%);
+    cursor: not-allowed;
+  }
+}
+
+// Match the dark mode styles from your greeting section
+.dark-mode {
+  background-color: $darkBackground; // Match your global dark background color
+  color: $textColorDark; // Match your global dark text color
+
+  .ai-feature-heading {
+    color: white;
+  }
+
+  .file-name {
+    color: white;
+  }
+  .custom-file-upload {
+    background-color: darken($buttonColor, 10%);
+    color: $textColorDark;
+  }
+
+  .ai-feature-results {
+    background-color: $darkBackground;
+    border-color: darken($darkBackground, 10%); // Slightly darken the border for contrast
+    color: $textColorDark;
+  }
+
+  input[type="file"] {
+    background-color: $darkBackground;
+    color: $textColorDark;
+    border-color: darken($darkBackground, 10%);
+  }
+
+  button {
+    background-color: darken($buttonColor, 10%); // Darken the button color for dark mode
+  }
+}
+
+// Include media queries to handle responsiveness
+@media (max-width: 1380px) {
+  .ai-feature-heading {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ai-feature-section {
+    width: auto;
+  }
+
+  .ai-feature-heading {
+    font-size: 30px;
+  }
+
+  .button-greeting-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
