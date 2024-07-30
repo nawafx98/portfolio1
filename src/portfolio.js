@@ -25,11 +25,15 @@ const greeting = {
   subTitle: emoji(
     "An enthusiastic Data Scientist with a strong foundation in Artificial Intelligence 🚀 having an experience in data analytics, AI model development, and natural language processing. deeply committed to leveraging AI and machine learning to derive insights and foster data-driven decision-making across diverse domains."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1X9pz8g_gHGQPZa2wFsRXfDw7COqBYOwq/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: empty, // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
+// AI feature 
+
+const aiFeature = {
+  display: true, // Set to false to hide AI feature section
+};
 // Social Media Links
 
 const socialMediaLinks = {
@@ -132,16 +136,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Data Analysis (Tableau - Python)", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Data Analysis (Tableau - Python - SQL - PowerBI)", //Insert stack or technology you have experience in
+      progressPercentage: "100%" //Insert relative proficiency in percentage
     },
     {
       Stack: "AI model development",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "87%"
     },
     {
       Stack: "Data Engineering",
@@ -156,6 +160,24 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+
+    {
+      role: "Data Analyst",
+      company: "Tamara",
+      companylogo: require("./assets/images/tamara.png"),
+      date: "June 2024 – Present",
+      desc: "Impacting how millions bank, shop and pay everyday through the power of data",
+
+    },
+
+    {
+      role: "People Analytics Intern",
+      company: "solutions by stc",
+      companylogo: require("./assets/images/solutions.png"),
+      date: "January 2024 – June 2024",
+      desc: "I’ve immersed myself in harnessing the power of people data, developing a deep understanding of workforce dynamics through predictive models. My focus has been on identifying patterns in employee turnover, assessing burnout dynamics, and devising strategic plans for workforce management, enabling a more proactive approach to people challenges.",
+
+    },
     {
       role: "Data Analysis Intern",
       company: "Labayh",
@@ -313,6 +335,7 @@ const isHireable = true; // Set false if you are not looking for a job. Also isH
 export {
   illustration,
   greeting,
+  aiFeature,
   socialMediaLinks,
   splashScreen,
   skillsSection,
