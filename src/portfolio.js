@@ -24,8 +24,7 @@ const greeting = {
   title: "Hi all, I'm Nawaf",
   subTitle: emoji(
     "An enthusiastic Data Scientist with a strong foundation in Artificial Intelligence 🚀 having an experience in data analytics, AI model development, and natural language processing. deeply committed to leveraging AI and machine learning to derive insights and foster data-driven decision-making across diverse domains."
-  ),
-  resumeLink: empty, // Set to empty to hide the button
+  ), // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
